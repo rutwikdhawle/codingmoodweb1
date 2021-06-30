@@ -14,20 +14,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>CodingMood1</title>
 </head>
-<body>
+<body>  
    
     <header>
-        <ul class="header">
+        
+        <ul class="header sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <li><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#contact">Contact</a></li>
+
         </ul>
+    <span style="font-size:30px;cursor:pointer"class="sidebtn" onclick="openNav()">&#9776;</span>
+
         <h2>CodingMood</h2>
     </header>
     <div class="container-fluid">
         <div class="row first" id="home">
             <div class="col-12 m1" id="img">
-                <img src="CDMOOD.png" height="300" width="300"alt="img">
+                <img src="/img/CDMOOD.png" height="300" width="300"alt="img">
             </div>
             <div class="col m1">
                 <div class="row">
@@ -45,23 +50,23 @@
             </div>
         </div>
         <div class="row second" id="courses">
-            <div class="col-md-5 second-c" id="second_c1">WEB DEVELOPMENT</div>
-            <div class="col-md-5 second-c" id="second_c2">APP DEVELOPMENT</div>
-            <div class="col-md-5 second-c" id="second_c3">LINUX & UNIX</div>
-            <div class="col-md-5 second-c" id="second_c4">COMPITETIVE PROGRAMMING</div>
-            <div class="col-md-5 second-c" id="second_c5">YOUTUBE SEO</div>
-            <div class="col-md-5 second-c" id="second_c6">INSTAGRAM MARKETING</div>
+            <div class="col-md-5 second-c" id="second_c1"><a href="web.html">WEB DEVELOPMENT</a></div>
+            <div class="col-md-5 second-c" id="second_c2"><a href="app.html">APP DEVELOPMENT</a></div>
+            <div class="col-md-5 second-c" id="second_c3"><a href="linux.html">LINUX & UNIX</a></div>
+            <div class="col-md-5 second-c" id="second_c4"><a href="competetive.html">COMPITETIVE PROGRAMMING</a></div>
+            <div class="col-md-5 second-c" id="second_c5"><a href="Youtube.html">YOUTUBE SEO</a></div>
+            <div class="col-md-5 second-c" id="second_c6"><a href="insta.html">INSTAGRAM MARKETING</a></div>
 
         </div>
         <div class="row third" id="contact">
           <div class="col-3"></div>
           <div class="col-md-6 third-c">
             <ul class="footer">
-                <li> <i class="fa fa-instagram" aria-hidden="true"></i> </li>
-             <li><i class="fa fa-github-square" aria-hidden="true"></i></li>
-             <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
-             <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-             <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+            <li> <a href="https://www.instagram.com/rutwikdhawle"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+             <li><a href="https://www.github.com/rutwikdhawle"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+             <li><a href="https://www.youtube.com/channel/UCSbeD43urn5O5pMqQXJyz_Q"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+             <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+             <li><a href="https://www.linkedin.com/in/rutwik-dhawle-a4b7831b1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
           
             </ul>
         </div>
@@ -69,5 +74,15 @@
 
         </div>
     </div>
+    
+         <script>
+          function openNav() {
+          document.getElementById("mySidenav").style.width = "50%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
 </body>
 </html>
